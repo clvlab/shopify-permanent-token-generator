@@ -1,11 +1,14 @@
 {
   "name": "shopify-permanent-token-generator",
   "version": "1.0.0",
-  "description": "A script to generate permanent Shopify Admin API tokens via OAuth",
+  "description": "Scripts to generate permanent Shopify Admin API tokens via OAuth and to uninstall the app from stores",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "activate-locations": "node activate-locations.js",
+    "uninstall-app": "node uninstall-app.js",
+    "uninstall-app:dry": "node uninstall-app.js --dry-run"
   },
   "dependencies": {
     "dotenv": "^16.3.1"
